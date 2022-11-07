@@ -1,6 +1,6 @@
 public class HopfieldNetwork {
-    int[][] matrixW;
-    int[][] samples;
+    private final int[][] matrixW;
+    private final int[][] samples;
 
 
     HopfieldNetwork(int[][]... samples) {
@@ -74,7 +74,7 @@ public class HopfieldNetwork {
         return true;
     }
     private int[] multiplyMatrixWithArray(int[][] matrix, int[] array){
-        int result[] = new int[array.length];
+        int[] result = new int[array.length];
         for (int i = 0; i < matrix.length; i++) {
             int[] raw = matrix[i];
             int sum = 0;
